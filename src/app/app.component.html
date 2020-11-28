@@ -1,0 +1,29 @@
+<p (mouseover)="OnLightOn()">
+  The Light Is <span *ngIf="LightOn">On!</span
+  ><span *ngIf="!LightOn">Off!</span>
+</p>
+<div>
+  <ul>
+    <li
+      *ngFor="let item of anArray"
+      [class.selected]="item.name === selected"
+      (click)="select(item)"
+      [style.color]="item.name === selected ? 'red' : 'black'"
+    >
+      {{ item.name
+      }}<span (click)="removeFromList(item)" class="close">&times;</span>
+    </li>
+  </ul>
+</div>
+<input
+  #pushed
+  type="text"
+  (input)="highlightTest(pushed.value)"
+  (keyup.enter)="arrayPushing(pushed.value); pushed.value = ''"
+/>
+
+<button (click)="arrayPushing(pushed.value); pushed.value = ''">Add</button>
+<br />
+
+<h4 *ngIf="anObj" class="obj">{{ anObj.name }} {{ anObj.releasedate }}</h4>
+  

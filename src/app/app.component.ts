@@ -12,12 +12,12 @@ export class AppComponent {
 
   // anArray = ['Angular', 'TypeScript', 'JavaScript', 'Foundation'];
   anArray = [
-    { name: "TypeScript", releasedate: " Releasedate: 1 October 2012" },
-    { name: "Angular", releasedate: " Releasedate: 14 September 2016" },
-    { name: "RxJs", releasedate: " Releasedate: Sep 3, 2015" },
-    { name: "NestJs", releasedate: " Releasedate: Nov 24, 2017" },
-    { name: "JavaScript", releasedate: " Releasedate: March 1996" },
-    { name: "Foundation", releasedate: " Releasedate:  September 2011" }
+    { name: "TypeScript", releasedate: " was released in 1 October 2012" },
+    { name: "Angular", releasedate: " was released in 14 September 2016" },
+    { name: "RxJs", releasedate: " was released in Sep 3, 2015" },
+    { name: "NestJs", releasedate: "was released in Nov 24, 2017" },
+    { name: "JavaScript", releasedate: " was released in March 1996" },
+    { name: "Foundation", releasedate: "  was released in September 2011" }
   ];
 
   selected = "";

@@ -34,7 +34,7 @@ export class AppComponent {
     if (y === -1) {
       this.anArray.push({
         name: pushed,
-        releasedate: " Releasedate: unknown"
+        releasedate: " releasedate is unknown"
       });
     }
 

@@ -1,5 +1,6 @@
 import { Component, VERSION } from "@angular/core";
 
+
 @Component({
   selector: "my-app",
   templateUrl: "./app.component.html",
@@ -23,6 +24,8 @@ export class AppComponent {
   selected = "";
 
   anObj: any = {};
+
+  
 
   OnLightOn(): void {
     this.LightOn = !this.LightOn;
@@ -66,5 +69,6 @@ export class AppComponent {
   select(item: any): void {
     this.selected = item.name;
     this.anObj = item;
+    console.log(this.selected)
   }
 }

@@ -32,10 +32,9 @@ li:active {
   background-color: #ddd;
   left: 0.1em;
 }
-li .selected {
-  background-color: #cfd8dc;
-  color: white;
-  font-weight: bold;
+.selected {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 .changeColor {

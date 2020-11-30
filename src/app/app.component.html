@@ -4,8 +4,7 @@
 <div>
 	<ul>
 		<!-- [class.selected]="item.name === selected" -->
-		<li *ngFor="let item of anArray" (click)="select(item)"
-			[class.selected]="item.name === selected">
+		<li *ngFor="let item of anArray" (click)="select(item)" [class.selected]="item.name === selected">
 			{{ item.name
       }}<span (click)="removeFromList(item)" class="close">&times;</span>
 		</li>

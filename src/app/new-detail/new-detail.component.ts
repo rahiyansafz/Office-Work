@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./new-detail.component.css"]
 })
 export class NewDetailComponent implements OnInit {
-  @Input() inputObj: any = {};
+    @Input() inputObj: any = {};
   constructor() {}
 
   ngOnInit() {

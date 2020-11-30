@@ -48,6 +48,7 @@ export class AppComponent {
     for (const item of this.anArray) {
       if (pushed === item.name) {
         this.anObj = item;
+        console.log(this.anObj);
       }
     }
 

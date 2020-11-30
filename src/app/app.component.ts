@@ -8,7 +8,7 @@ import { Component, VERSION } from "@angular/core";
 export class AppComponent {
   title = "my-app";
   LightOn = false;
-  changeColor = false;
+  // changeColor = false;
 
   // anArray = ['Angular', 'TypeScript', 'JavaScript', 'Foundation'];
   anArray = [
@@ -44,7 +44,7 @@ export class AppComponent {
     //     releasedate: 'unknown',
     //   });
     // }
-
+    // <!-- [class.selected]="item.name === selected" -->
     for (const item of this.anArray) {
       if (pushed === item.name) {
         this.anObj = item;

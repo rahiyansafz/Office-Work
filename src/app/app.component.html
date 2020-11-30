@@ -3,8 +3,9 @@
 </p>
 <div>
 	<ul>
-		<!-- [class.selected]="item.name === selected" -->
-		<li *ngFor="let item of anArray" (click)="select(item)" [class.selected]="item.name === selected">
+		<li *ngFor="let item of anArray; let i = index" [class.selected]="item.name === selected"
+			(click)="select(item)">
+			<!-- [style.color]="item.name === selected ? 'gray' : 'black'" -->
 			{{ item.name
       }}<span (click)="removeFromList(item)" class="close">&times;</span>
 		</li>
@@ -19,5 +20,4 @@
 
 <button (click)="arrayPushing(pushed.value); pushed.value = ''">Add</button>
 <br />
-
 <app-new-detail [inputObj]="anObj"></app-new-detail>

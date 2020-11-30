@@ -29,28 +29,30 @@ export class AppComponent {
   }
 
   arrayPushing(pushed: string): void {
-    const x = JSON.stringify(this.anArray);
-    const y = x.indexOf(pushed.trim());
-    if (y === -1) {
-      this.anArray.push({
-        name: pushed,
-        releasedate: " releasedate is unknown"
-      });
+    pushed = pushed.trim();
+    if (pushed) {
+      const x = JSON.stringify(this.anArray);
+      console.log(x);
+      const y = x.indexOf(`"name":"${pushed}"`);
+      if (y === -1) {
+        this.anArray.push({
+          name: pushed,
+          releasedate: " releasedate is unknown"
+        });
+      }
     }
-
     // if (JSON.stringify(this.anArray).indexOf(pushed.trim()) === -1) {
     //   this.anArray.push({
     //     name: pushed,
     //     releasedate: 'unknown',
     //   });
     // }
-    // <!-- [class.selected]="item.name === selected" -->
-    for (const item of this.anArray) {
-      if (pushed === item.name) {
-        this.anObj = item;
-        console.log(this.anObj);
-      }
-    }
+
+    // for (const item of this.anArray) {
+    //   if (pushed === item.name) {
+    //     this.anObj = item;
+    //   }
+    // }
 
     this.selected = "";
   }
@@ -68,6 +70,5 @@ export class AppComponent {
     this.selected = item.name;
     this.anObj = item;
     console.log(this.selected);
-    console.log(this.anObj);
   }
 }

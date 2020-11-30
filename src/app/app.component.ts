@@ -68,5 +68,6 @@ export class AppComponent {
     this.selected = item.name;
     this.anObj = item;
     console.log(this.selected);
+    console.log(this.anObj);
   }
 }
